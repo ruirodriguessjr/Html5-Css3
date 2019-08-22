@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Teste JavaScript</title>
+	<script>
+		var quebrada = false; /* ~Declarei ela quebrada como falsa, pois assim, quando eu declarar ela como verdadeira, ao quebrar ela vai permanecer quebrada.*/
+		function mudaLampada(tipo) {
+			if(tipo==1){ /* Condição dentro da minha função que vai passar por parâmetro a função mudaLampada(1, 2, 3) e seu tipo vai receber (1, 2, 3) para dentro de uma condição arquivo receber a intereção desejada.*/
+				arquivo = "_imagens/lampada-acesa.jpg";
+			}
+			if(tipo==2){
+				arquivo = "_imagens/lampada-apagada.jpg";
+			}
+			if(tipo==3){
+				arquivo = "_imagens/lampada-quebrada.jpg";
+			}
+			if(!quebrada){
+				document.getElementById('luz').src= arquivo;
+				if(tipo==3){
+					quebrada = true;
+				}
+			} 
+		}
+	</script>
+	
+
+</head>
+<body>
+	<h1>Acenda a Lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/> <!-- onmousemove = faz com que ao passar meu mouse em cima do objeto a lampada acenda, onmouseout = faz com que quando eu tire meu mouse de cima do objeto ele apague, e onclick = faz com que ao clicar em cima do meu objeto ele quebre, tudo isso sendo alterado pelas fotos pré trabalhadas.  -->
+</body>
+
+</html>	

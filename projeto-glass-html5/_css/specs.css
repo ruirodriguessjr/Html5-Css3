@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+section#conteudo{ /* Conteudo principal do meu site(foto e iframe)*/
+	width: 1000px; /* Largura do meu conteudo.*/
+	margin: auto; /* Margem centralizada do meu conteúdo.*/
+}
+iframe#frame-spec { /* Tamanho do meu Iframe.*/
+	width: 400px; /* Largura do meu iframe.*/
+	height: 300px; /*  Altura do meu Iframe.*/
+	border: none; /* Retirando a borda do meu Iframe.*/
+	overflow: hidden; /* A overflowpropriedade especifica o que deve acontecer se o conteúdo ultrapassar a caixa de um elemento. */
+}
+
+iframe#frame-spec::-webkit-scrollbar {	
+	display: none;
+}
+

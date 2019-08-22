@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/fotos.css"/>
+
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script> <!-- Linkagagem do meu Javascript para com meu Html por pasta e doc salvo.-->
+<body>
+	
+<div id="interface">
+
+	<header id="cabecalho"> <!-- Header é um cabeçalho que contém as informações de uma página web. Quanto às informações, podemos encontrar dados sobre codificação, tamanho da página, tempo de duração de cache, hora da última atualização e demais dados relevantes sobre uma página.-->
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>	
+		</hgroup>
+
+
+		<img id="icone" src="_imagens/fotos.png"/>
+
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<!-- onmousemove = faz com que ao passar meu mouse em cima do objeto a lampada acenda, onmouseout = faz com que quando eu tire meu mouse de cima do objeto ele apague, e onclick = faz com que ao clicar em cima do meu objeto ele quebre, tudo isso sendo alterado pelas fotos pré trabalhadas.  -->
+				<li onmousemove="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="index.html">Home</a></li>
+				<li onmousemove="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+				<li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+			</ul>
+		</nav> <!-- O elemento NAV agrupa blocos de links de um mesmo assunto ou links internos do website. -->
+	</header>
+
+	<section id="corpo-full"> <!-- A tag section é utilizada para marcar as seções de conteúdo de uma página. Com Esse elemento agrupamos de forma lógica nosso conteúdo, separando a informação em áreas diferentes. O principal objetivo é retirar essa responsabilidade das divs. Tendo como principal diferencial a navegação semântica com HTML. -->
+		<article id="noticia-principal"> <!-- O Elemento HTML Article (<article>) representa uma composição independente em um documento, página, aplicação,, noticia, artigo ou site. -->
+			<header id="cabecalho-artigo"> 
+				<hgroup>
+					<h3>Glass > Fotos</h3>
+					<h1>Galeria de Imagens no Google Glass</h1>
+					<h2>por Gustavo Guanabara</h2>
+					<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+				</hgroup>
+			</header>
+
+	<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+	<ul id="album-fotos">
+		<li id="foto01"><span>Agenda e lembretes</span></li>
+		<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+		<li id="foto03"><span>Leve e compacto</spam></li>
+		<li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+		<li id="foto05"><span>Vários tipos de lente</span></li>
+		<li id="foto06"><span>Informações importantes</span></li>
+	</ul>
+
+		</article>
+	</section>
+
+	<footer id="rodape"> <!-- O elemento footer marca a área inferior, normalmente conhecida como rodapé, do conteúdo geral do documento ou do conteúdo de uma seção específica a qual ele está subordinado.-->
+		<p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
+			<a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+	</footer>
+
+</div>
+</body>
+
+</html>	

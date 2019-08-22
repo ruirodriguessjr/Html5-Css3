@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/media.css"/>
+
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script> <!-- Linkagagem do meu Javascript para com meu Html por pasta e doc salvo.-->
+<body>	
+<div id="interface">
+
+	<header id="cabecalho"> <!-- Header é um cabeçalho que contém as informações de uma página web. Quanto às informações, podemos encontrar dados sobre codificação, tamanho da página, tempo de duração de cache, hora da última atualização e demais dados relevantes sobre uma página.-->
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>	
+		</hgroup>
+		<img id="icone" src="_imagens/multimidia.png"/>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<!-- onmousemove = faz com que ao passar meu mouse em cima do objeto a lampada acenda, onmouseout = faz com que quando eu tire meu mouse de cima do objeto ele apague, e onclick = faz com que ao clicar em cima do meu objeto ele quebre, tudo isso sendo alterado pelas fotos pré trabalhadas.  -->
+				<li onmousemove="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+				<li onmousemove="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+				<li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+			</ul>
+		</nav> <!-- O elemento NAV agrupa blocos de links de um mesmo assunto ou links internos do website. -->
+	</header>
+
+	<section id="corpo-full"> <!-- A tag section é utilizada para marcar as seções de conteúdo de uma página. Com Esse elemento agrupamos de forma lógica nosso conteúdo, separando a informação em áreas diferentes. O principal objetivo é retirar essa responsabilidade das divs. Tendo como principal diferencial a navegação semântica com HTML. -->
+		<article id="noticia-principal"> <!-- O Elemento HTML Article (<article>) representa uma composição independente em um documento, página, aplicação,, noticia, artigo ou site. -->
+			<header id="cabecalho-artigo"> 
+				<hgroup>
+					<h3>Glass > Multimídia</h3>
+					<h1>Sons e Vídeos</h1>
+					<h2>por Gustavo Guanabara</h2>
+					<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+				</hgroup>
+			</header>
+
+			<div id="tv-radio"> <!-- Div feita para colocação do audio e vídeo dentro da minha página de multimídia.-->
+				<audio id="musica" controls="controls"> <!-- Parâmetro Controls mostra os controles de audio na div de audio criada.-->
+					<source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/> <!-- Mídia convertida para conseguir reproduzir em outros navegadores.-->
+					<source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/> <!-- Mídia convertida para conseguir reproduzir em outros navegadores.-->
+					Desculpe, mas não foi possível carregar o áudio.
+
+				</audio>
+				<video id="filme" controls="controls" poster="_imagens/video-mini03.jpg"><!-- Parâmetro Controls mostra os controles de audio na div de video criada. Parametro poster é feito para o tratamento do modelo do menu de exibição do meu reprodutor.-->
+					<source src="_media/getting-started.mp4" type="video/mp4"/> <!-- Video convertida para conseguir reproduzir em outros navegadores.-->
+					<source src="_media/getting-started.webm" type="video/webm"/> <!-- Video convertida para conseguir reproduzir em outros navegadores.-->
+					<source src="_media/getting-started.ogv" type="video/ogg"/>	<!-- Video convertida para conseguir reproduzir em outros navegadores.-->			
+					Desculpe, mas não foi possível carregar o vídeo.
+				</video>
+			</div>
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> --> <!-- A diferença entre colocar um iframe, usando como link para exibir em seu site o vídeo linkado do youtube é que eu posso fazer isso ou hospedar meu arquivo tratado para os demais navegadores, se usar os arquivos tem que se verificar seu pacote de dados com a operadora de hospedagem, se for pelo youtube não precisa, mas corre o risco do arquivo não ser carregado caso o vídeo linkado esteja fora do ar, no seu site também estará. -->
+		</article>
+	</section>
+
+	<footer id="rodape"> <!-- O elemento footer marca a área inferior, normalmente conhecida como rodapé, do conteúdo geral do documento ou do conteúdo de uma seção específica a qual ele está subordinado.-->
+		<p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
+			<a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+	</footer>
+
+</div>
+</body>
+
+</html>	

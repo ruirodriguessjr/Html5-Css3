@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Teste JavaScript</title>
+	<script>
+		function acendeLampada() {
+			document.getElementById('luz').src="_imagens/lampada-acesa.jpg"; /* document.getElementById quer dizer o retorno de um elemento(Imagem da Lampada Acesa) na interface do meu site.*/
+		} /* Tudo que estiver em Parênteses são parâmetros, tudo que estiver em chaves são códigos.*/
+		function apagaLampada() { /* Função para Apagar a minha Lampada.*/
+			document.getElementById("luz").src="_imagens/lampada-apagada.jpg"; 
+		}
+		function quebraLampada(){ /* Função para quebrar a minha Lampada. */
+			document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+		}
+	</script>
+	
+
+</head>
+<body>
+	<h1>Acenda a Lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/> <!-- onmousemove = faz com que ao passar meu mouse em cima do objeto a lampada acenda, onmouseout = faz com que quando eu tire meu mouse de cima do objeto ele apague, e onclick = faz com que ao clicar em cima do meu objeto ele quebre, tudo isso sendo alterado pelas fotos pré trabalhadas.  -->
+</body>
+
+</html>	

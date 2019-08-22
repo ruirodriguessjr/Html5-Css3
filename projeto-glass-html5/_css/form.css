@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+form {
+	width: 500px; /*Largura do formulário.*/
+	margin: auto; /*Margin para que fique centralizado.*/
+}
+
+input, textarea {
+	font-family: sans-serif; /*Estilo da Fonte.*/
+	font-weight: normal; /*Que o estilo da letra seja normal, sem negrito.*/
+	font-size: 13pt; /*Tamanho da minha fonte.*/
+	background-color: rgba(255,255,255,.8); /* Transparência da minha caixa de mensagem para que minha imagem não corte totalmente.*/
+}
+
+input:hover, textarea:hover { /*Efeito de passar o mouse.*/
+	background-color: #dddddd; 	/*Quando eu passar o mouse em cima do que for objeto Input ele faça o efeito da cor desejada.*/
+}
+
+legend {
+	color: #888888; /*Cor da minha fonte.*/
+	font-weight: bold; /*Que o estilo da letra seja negrito.*/
+	font-size: 13pt; /*Tamanho da minha fonte.*/
+	font-family: sans-serif; /*Estilo da Fonte.*/
+}
+
+fieldset {
+	border-color: #cecece; /*Cor da minha borda.*/
+	margin: 20px; /*Margem da minha borda.*/
+
+}
+
+fieldset#sexo {
+	width: 150px; /*Largura do meu campo de sexo.*/
+}
+
+fieldset#usuario {
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%; /*Inserção de imagem no campo da minha id usuário do fieldset. 
+	A porcentagem faz com que eu alinhe da maneira que eu queira a minha imagem, que no caso foi lateral e vertical.*/
+
+}
+
+fieldset#endereco {
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%; /*Inserção de imagem no campo da minha id usuário do fieldset. 
+	A porcentagem faz com que eu alinhe da maneira que eu queira a minha imagem, que no caso foi lateral e vertical.*/
+}
+
+fieldset#mensagem {
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%; /*Inserção de imagem no campo da minha id usuário do fieldset. 
+	A porcentagem faz com que eu alinhe da maneira que eu queira a minha imagem, que no caso foi lateral e vertical.*/	
+}
+
+fieldset#pedido {
+	background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%; /*Inserção de imagem no campo da minha id usuário do fieldset. 
+	A porcentagem faz com que eu alinhe da maneira que eu queira a minha imagem, que no caso foi lateral e vertical.*/	
+}

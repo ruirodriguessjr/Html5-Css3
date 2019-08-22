@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+ul#album-fotos { /* Formatação geral da minha lista não ordenada. Lmebrando que minhas fotos estão em blocos de janelas e não em img, pois vão ter um efeito de zoom.*/
+	width: 700px; /* Largura dos meus itens de fotos.*/
+	margin: 0 auto; /* É o espaçamento de fora do container.*/
+	padding: 50px; /* Espaçamento de dentro do meu container.*/
+	overflow: hidden; /* Estouro oculto, não deixa o conteúdo estourar pois ele oculta a barra de rolagem.*/
+	list-style: none; /* Meus itens de fotos vão ficar com os marcadores nulos, ou seja, sem marcadores.*/
+
+}
+
+ul#album-fotos li { /* Formatação das minhas linhas da lista não ordenada.*/
+	float: left; /* faz com que os meus itens fiquem soltos e um ao lado do outro.*/
+	width: 200px; /* Gerando uma largura e altura para colocar meu album respectivo ao meu item.*/
+	height: 200px; /* Gerando uma largura e altura para colocar meu album respectivo ao meu item.*/
+	margin: 10px; /* É o espaçamento de fora do container.*/
+	border: 5px solid white; /* Borda sólida reta e lisa branca.*/
+	background-color: #ffffff; /* Cor de fundo dos meus menus de album fotos.*/
+	box-shadow: 1px 1px 3px rgba(0,0,0,.5) /* Grau de sombreamento da minha janela de fotos(galeriade fotos).*/
+	
+
+}
+
+ul#album-fotos li span { /* Estilização da linha que tem span.*/
+	opacity: 0; /* Coloco a legenda que está localizada em (li com span) transparente, ou seja, opcasa sumindo com ela.*/
+	color: #ffffff; /* Cor da legenda*/
+	text-shadow: 1px 1px 1px #000000; /* A propriedade text-shadow acrescenta sombras ao texto. deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+	background-color: rgba(0,0,0,.5); /* Cor de fundo da minha legenda.*/
+	font-size: 9pt; /* Tamanho da minha Legenda.*/
+	line-height: 370px; /* A line-heightpropriedade especifica a altura de uma linha. No caso especifica a altura da legenda quanto a minha janela de foto.*/
+	padding: 5px; /* Espaçamento interno do meu conteudo para com a borda.*/
+}
+
+ul#album-fotos li:hover { /* Formatação da minha interação para com a foto enquadrada.*/
+	-webkit-transform: scale(1.5); /* Transformação da minha janela minimizada para a maximizada.*/
+	transition: 0.5s ease-in-out; /* Faz com que eu faça a transição da minha transformação do meu zoom inicio e final de maneira mais lenta melhor para minha visão.*/
+
+}
+
+ul#album-fotos li:hover span { /* Faz com que eu coloque iñteração da legenda quando eu passo o mouse.*/
+	opacity: 1; /* habilito nível 1 de legenda.*/
+
+}
+
+
+ul#album-fotos li#foto01 { /* Formatação da minha foto listada na linha.*/
+     background: url('../_imagens/galeria-01.jpg');
+     background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+     background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+     background-color: #ffffff; /*Cor da minha imagem de fundo.*/
+}
+
+ul#album-fotos li#foto01:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista.*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}
+
+ul#album-fotos li#foto02 {
+    background: url('../_imagens/galeria-02.jpg');
+     background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+     background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+     background-color: #ffffff; /*Cor da minha imagem de fundo.*/
+ }
+
+ul#album-fotos li#foto02:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista.*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}
+
+ul#album-fotos li#foto03 {
+    background: url('../_imagens/galeria-03.jpg');
+    background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+    background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+    background-color: #ffffff; /*Cor da minha imagem de fundo.*/
+}
+
+ul#album-fotos li#foto03:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista.*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}
+
+ul#album-fotos li#foto04 {
+    background: url('../_imagens/galeria-04.jpg');
+    background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+    background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+    background-color: #ffffff; /*Cor da minha imagem de fundo.*/
+}
+
+ul#album-fotos li#foto04:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista.*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}
+
+ul#album-fotos li#foto05 {
+    background: url('../_imagens/galeria-05.jpg');
+    background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+    background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+    background-color: #ffffff; /*Cor da minha imagem de fundo.*/        
+}
+
+ul#album-fotos li#foto05:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista.*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}
+
+ul#album-fotos li#foto06 {
+    background: url('../_imagens/galeria-06.jpg');
+    background-position: 50% 50%; /* Faz com que eu coloque a imagem enquadrada no meio dela, pois quando eu passar o mouse e fizer o zoom ele vai puxar o zoom do meio da imagem.*/
+    background-size: 400px 400px; /*Tamanho da minha imagem de fundo.*/
+    background-color: #ffffff; /*Cor da minha imagem de fundo.*/
+}
+
+ul#album-fotos li#foto06:hover { /* Faz a interação quanto ao efeito de zoom out(Afastamento) do meu enquadramento de imagem dentro da minha lista*/
+	background-position: 0px 0px; /*Enquadrando minha imagem com o posicionamento 0px na parte de cima da minha tela(foto).*/ 
+	background-size: 200px 200px; /* Criando o efeito ao passar o mouse aumentando do 0px até 200px. */
+}

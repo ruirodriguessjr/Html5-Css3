@@ -1,0 +1,253 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+	font-family: 'FonteLogo'; /* Fonte definida para meu site, posso se quiser importar uma fonte de outro site externo.*/
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+	font-family: Arial, sans-serif; /* Tipo de Fonte de todo o meu site.*/
+	background-color: #dddddd;/* Cor do fundo do meu site. */
+	color: rgba(0,0,0,1);
+
+}
+
+div#interface { /* Delimitação de todo ponto absoluto dentro do meu site, tudo que estiver aqui dentro vai ficar dentro dessa divisão(container).*/
+	width: 950px; /* Tamanho do meu conteudo da interface.*/
+	background-color: #ffffff; /* Cor do meu fundo de interface.*/
+	margin: -20px auto 0px auto; /* Margm da minha Interface, começando por cima, direita, baixo, esquerda.*//* Colocando no modo auto, na parte da direita e da esquerda, ela vai ficar sempre centralizada quando eu diminuir a tela, ou aumentar.*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* box shadow faz uma sombra, no caso usei o formato rgba(red, green, blue, alpha) para tonalizar essa sombra.*/
+	padding: 10px; /* Cria um espaço dentro da foto para com a borda. */
+
+}
+
+p {
+
+	text-align: justify; /* Justifico o meu texto nos parágrafos.*/
+	text-indent: 50px; /* Faço a identação do meu parágrafo com início em 50px, ou seja um pouco mais adiantado do que a formatação a esquerda.*/
+}
+
+a {
+	color: #606060; /* Cor das palavras dos meus links. */
+	text-decoration: none; /*Deixando a formatação do meu texto nula.*/
+}
+
+a:hover {
+	text-decoration: underline;/*Deixando o meu link com sublinhado quando passo o mouse nele.*/
+}
+
+header#cabecalho img#icone { /* Identifico como id icone a imagem em meu cabeçalho.*/
+	position: absolute; /* Sua posição faz com que ele possa correr toda minha página.*/
+	left: 900px; /* Sua posição comparado a esquerda do site, quanto maior o px, mais a direita.*/
+	top: 70px; /* Sua posição comparada ao topo do site(parte de cima), quanto maior mais pra baixo fica do topo.*/
+}
+
+header#cabecalho {
+	border-bottom: 3px solid #606060; /* Faz a divisão como borda(linha de divisão) do meu cabeçalho para com a parte do corpo site.*/
+	height: 150px; /* Define a altura da divisão do meu cabeçalho com o body.*/
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px; /* Importação da minha imagem Glass no cabecalho, fazendo com que seu alinhamento lateral e vertical estão informados.*/
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif; /*Tipo de fonte de formatação dos títulos do meu cabeçaclho.*/
+	font-size: 30pt; /* especificando o tamanho do meu texto.*/
+	color: #606060; /* Cor dos meus titulos h1*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6); /* Sombreamento do meu título em preto.*/
+	padding: 0px; /* Espaço interno dentro da borda.*/
+	margin-bottom: 0px; /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif; /*Tipo de fonte de formatação dos títulos do meu cabeçaclho.*/
+	font-size: 15pt; /* especificando o tamanho do meu texto.*/
+	color: #888888; /* Cor dos meus titulos h1*/
+	padding: 0px; /* Espaço interno dentro da borda.*/
+	margin-top: 0px: /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+}
+
+/* Formatação de Imagens com Legendas */
+figure.foto-legenda{
+	position: relative; /* Sua posição vai ficar relativo aonde foi colocado dentro do código.
+	Como figcaption está em top 0px, não existe deslocamento, fazendo assim com que todo (container filho) fique dentro do bloco (figure) */
+	border: 2px solid white ; /*Borda com largura, tipo de borda, e a cor da borda*/
+	box-shadow: 1px 1px 4px black; /* Sombra em volta da borda com parametros de Deslocamento Hoizontal, Deslocamento Vertical e Espalhamento, + a cor definida.*/
+}
+
+figure.foto-legenda img{ /* Esse estilo faz com que a imagem fique do tamanho da borda sem que ela vaze dela( saia fora) */
+	width: 100%; /* Largura*/
+	height: 100%; /* Altura*/
+}
+figure.foto-legenda figcaption{
+	opacity: 0; /* faz com que eu tire toda a legenda da minha foto, fazendo com que ela fique opaca e invisível aos olhos da foto. */
+	position: absolute; /*Posição absoluta dentro da borda branca, fazendo com que a imagem seja unica coisa dentro das bordas.*/
+	top: 0px; /*Como seu top é de 0px, chamamos o (position relative) dentro de (Figure) 
+	para fazer com que ele fique dentro do container do pai(imagem dentro da borda)*/
+	background-color: rgba(0,0,0,.4); /* Faz com que a sobrecor em cima da imagem fique sombreado*/
+	color: white; /* Cor do texto que está dentro do Sombreado. */
+	width: 100%;
+	height: 100%; /* Ambos preenche o sombreado por 100% da borda dentro da foto. */
+	padding: 10px; /* Cria um espaço dentro da foto para com a borda. */
+	box-sizing: border-box; /* Cria um box( uma divisão) dentro da minha foto para com a borda */
+	transition: opacity 1s; /* Parametro de tempo que ficara estavel quando meu mouse passar pela imagem. */
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1; /*Formatação específica para quando eu passar o mouse em cima da foto, em relevo ela vai mostrar a legenda. (1 = 100%). */
+}
+/* Formatação Menu */
+nav#menu {
+	display: block; /* Opção de menu em blocos, fazendo com que sua exibição flutue em blocos dentro da tela.*/
+}
+nav#menu ul {
+	list-style: none; /* Formatação dos marcadores referência do meu, no caso a exclusão deles,*/
+	text-transform: uppercase; /* Transforação do texto do campo menu em Máiúsculo. */
+	position: absolute; /* Sua posição faz com que ele possa correr toda minha página. 
+	Se fosse (posição relativa, somente poderia correr dentro do container(dentro do menu identificado).*/ 
+	top: -20px; /* Posição em referência ao topo do meu site.(Está Negativo para poder ficar colado com o top da tela).*/
+	left: 450px; /* Posição em Referência a esquerda do meu site.*/
+}
+nav#menu li {
+	display: inline-block; /* Os itens ficam dispostos em bloco de maneira horizontal, um do lado do outro. */
+	background-color: #dddddd; /* Cores das caixas de blocos dos menus(fundo dentro da caixa). */
+	padding: 10px; /* Colocando os itens dentro do menu num espaçamento interno, como se fosse um box. */
+	margin: 0px; /* Espaçamento entre os boxes dos botões de menu(espaço fora dos botões, entre um e os outros). */
+	transition: background-color 1s; /* Tempo em que o efeito de escurecimento(evidencia do menu) vai ter quando eu passar o mouse.*/
+}
+nav#menu li:hover { /* Efeito de escurecimento realizado quando eu passo o mouse por cima do menu.*/
+	background-color: #606060;
+}
+nav#menu h1 {
+	display: none; /* Faz com que a identificação do meu menu principal fique escondido, não tem sentido visual,
+	mas fica visivel para os mecanismos de busca dentro do meu item de navegação. */
+}
+nav#menu a { /* menu com linf*/
+	color: #000000; /* Cor do texto do meu menu.*/
+	text-decoration: none; /*Tirando o sublinhado do meu texto.*/
+}
+nav#menu a:hover { /* Fazendo com que o link mude de cor quando estiver ativo pelo mouse.*/
+	color: #ffffff; /*Cor branco quando o mouse estiver sob o menu.*/
+	text-decoration: underline;
+}
+
+section#corpo { /* Sessão principal do site, separada em blocos.*/
+	display: block; /* Opção de menu em blocos, fazendo com que sua exibição flutue em blocos dentro da tela.*/
+	width: 490px; /*Tamanho do meu conteúdo dentro do site.*/
+	float: left; /*Faz com que meu texto flutue pelo lado que eu quero.*/
+	border-right: 3px solid #606060; /* Faz com que eu coloque uma borda a minha direita separando os dois conteúdos.*/
+	padding-right: 15px; /* Espaçamento entre os demais itens.*/
+}
+
+article#noticia-principal h2 {
+	font-size: 13pt; /* Fonte da minha noticia principal.*/
+	color: #606060; /* Cor da minha letra de notícia.*/
+	background-color: #dddddd; /* Cor do fundo da minha notícia principal.*/
+	padding: 5px 0px 5px 10px; /* Lembrando que o espaçamento entre eles começa por cima, direita, baixo e esquerda.*/ 
+	margin: 10px 0px 10px 0px; /* Aumentando minha margem de cima, e a da de baixo.*/
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif; /*Tipo de fonte de formatação dos títulos do meu cabeçaclho.*/
+	font-size: 20pt; /* Fonte da minha noticia principal.*/
+	color: #606060; /* Cor da minha letra de notícia.*/
+	margin-bottom: 0px; /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+	margin-top: 0px; /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+
+}
+
+.direita {
+	text-align: right; /* Alinhado a direita.*/
+
+}
+
+
+header#cabecalho-artigo h2 {
+	font-size: 12pt; /* Fonte da minha noticia principal.*/
+	color: #cecece; /* Cor da minha letra de notícia.*/
+	background-color: #ffffff; 
+	margin: 0px; /* Lembrando que o espaçamento entre eles começa por cima, direita, baixo e esquerda.*/
+}  
+
+header#cabecalho-artigo h3 {
+	font-size: 12px; /* Fonte da minha noticia principal.*/
+	color: #606060; /* Cor da minha letra de notícia.*/
+}
+
+
+table#tabelaspec { /* Id da tabela par ao Css.*/
+	border: 1px solid #606060; /* Borda para toda a tabela.*/
+	border-spacing: 0px; /* Espaço entre as células da tabela. */
+	margin-left: auto; /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+	margin-right: auto; /* Margem específica dentro do espaço(cima, direita,baixo,esquerda).*/
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060; /* Borda para as linhas das células.*/
+	padding: 10px; /* Espaçamento entre os demais itens.*/
+	text-align: center; /* Alinhamento do texto. No caso está ao centro, podendo ter colocado a direita ou a esquerda.*/
+	vertical-align: middle; /* Podendo ter valores como top(Alinhamento acima), bottom(alinhamento na parte de baixo) ou middle(Alinhamento no centro). */
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff; /* Cor do texto da tabela na coluna da esqueda dentro do td.*/
+	background-color: #606060; /* Cor de fundo dentro da coluna da esquerda dentro do td.*/
+	vertical-align: top;  /* Podendo ter valores como top(Alinhamento acima), bottom(alinhamento na parte de baixo) ou middle(Alinhamento no centro). */
+	font-weight: bold; /* Fonte em negrito do texto.*/
+}
+
+table#tabelaspec td.cd {
+	background-color: #cecece; /* Cor de fundo dentro da coluna da direita dentro do td.*/
+}
+
+table#tabelaspec caption{
+	color: #888888; /* Cor do meu título. da tabela. */
+	font-size: 13pt; /* Tamanho da minha fonte do título da tabela.*/
+	font-weight: bolder; /* Fonte em negrito da minha tabela.*/
+
+}
+
+table#tabelaspec caption span {
+	display: block; /* Opção de menu em blocos, fazendo com que sua exibição flutue em blocos dentro da tela.*/
+	float: right; /* Vai flutuar a direita.*/
+	color: #000000; /* Cor da fonte do meu span.*/
+	font-size: 8pt; /* Tamanho da minha fonte.*/
+	margin-top: 10px; /* Aumentei a margem do topo para ele ficar do tamanho menor que o título da tabela.*/
+
+}
+
+aside#lateral { /*Lado direcionado do texto, neste caso quero que ele fique a esquerda.*/
+	display: block; /* Opção de menu em blocos, fazendo com que sua exibição flutue em blocos dentro da tela.*/
+	width: 400px; /*Tamanho do meu conteúdo dentro do site.*/
+	float: right; /*Faz com que meu texto flutue pelo lado que eu quero.*/
+	background-color: #dddddd; /* Cor de fundo do meu aside Lateral.*/
+	padding: 10px; /* Espaçamento dentro da borda.*/
+	margin-top: 10px; /* Margem em relação ao topo da pagina.*/
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5); /* Sombra com deslocamento lateral e vertical, espalhamento e a cor, com preto de 50% de transparencia.*/
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo', sans-serif; /*Tipo de fonte de formatação dos títulos do meu cabeçaclho.*/
+	font-size: 20pt; /* Fonte da minha noticia principal.*/
+	color: #606060; /* Cor da minha letra de notícia.*/
+	margin-top: 0px; /* Subida referente ao topo da pagina.*/
+
+} 
+
+aside#lateral h2 {
+	background-color: #606060; /* Cor de fundo do título.*/
+	font-size: 13pt; /* Tamanho da minha fonte.*/
+	color: #ffffff; /* Cor da minha fonte.*/
+	padding: 5px; /* Espaçamento dentro da borda.*/
+}
+
+footer#rodape {
+	clear: both; /* Limpa todo o conteùdo fazendo com que suas informações vão para o fim do site(RODAPÉ).*/
+	border-top: 1px solid #606060; /*Cria uma borda separando o rodapé para o o conteúdo acima do site.*/
+	
+}
+
+footer#rodape p {
+	text-align: center; /* Alinho centralizadamente o Copyright do meu rodapé.*/
+}
+
+
+

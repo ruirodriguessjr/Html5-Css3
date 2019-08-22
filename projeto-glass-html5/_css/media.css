@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div#tv-radio { /*Toda essa formatação foi feita para dimensionar as imagens de tv e radio dentro da minha pagina, dentro da minha div(divisória onde vai ficar meu conteúdo).*/
+	width: 900px; /*Largura da minha div.*/
+	height: 580px; /*Altura da minha div.*/
+	margin: auto;	/*Para ficar centralizado dentro da minha div.*/
+	background: url("../_imagens/radio-tv.png") no-repeat; /*Imagem de fundo da minha div.*/
+
+}
+
+audio#musica { /*Formatação para o menu de musica fique alinhado com a imagem.*/
+	display: block; /*Feito para ele ser exibido como bloco.*/
+	position: relative; /*Faz com que esse bloco fique na sua posição demarcada podendo ser deslocado dentro do bloco.*/
+	left: 575px; /*Distanciamento do objeto da margem da esquerda.*/ 
+	top: 490px; /*Distanciamento do objeto da margem do topo.*/
+	width: 300px; /*Largura da minha seção.*/
+}
+
+video#filme {
+	display: block; /*Feito para ele ser exibido como bloco.*/
+	position: relative; /*Faz com que esse bloco fique na sua posição demarcada podendo ser deslocado dentro do bloco.*/
+	left: 90px; /*Distanciamento do objeto da margem da esquerda.*/ 
+	top: 60px; /*Distanciamento do objeto da margem do topo.*/
+	width: 440px; /*Largura da minha seção.*/	
+	
+}
+
