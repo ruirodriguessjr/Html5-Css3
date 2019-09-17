@@ -12,6 +12,12 @@ input[type="reset"]{
   
 }
 
+input[name="btn_igual"]{
+  width: 90px;
+  padding: top
+  
+}
+
 
 #display{
   width: 187px;

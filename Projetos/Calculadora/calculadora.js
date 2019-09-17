@@ -36,7 +36,7 @@ function calcular(Op) {
                 acumulador -= parseFloat(document.getElementById('display').value);
                 else if ( '/' == opPendente )
                 acumulador /= parseFloat(document.getElementById('display').value);
-                else if ( '*' == opPendente )
+                else if ( 'x' == opPendente )
                 acumulador *= parseFloat(document.getElementById('display').value);
             else
                 acumulador = parseFloat(document.getElementById('display').value);
@@ -64,5 +64,3 @@ function ponto() {
        }
        document.getElementById('display').value = valPresente;
 }
-
-
