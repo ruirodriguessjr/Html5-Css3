@@ -7,7 +7,7 @@ function limpa(){
     document.getElementById('display').value = '';
 }
 
-//Abaixo estamos adcionando os valores de cada bot√£o ao parametro num
+//Abaixo estamos adcionando os valores de cada bot„o ao parametro num
 function preencher(num) {
     if (aux) {
         document.getElementById('display').value = num;
@@ -21,10 +21,10 @@ function preencher(num) {
        }
 }
         
-//Valores de exibi√ß√£o quando apertado o bot√£o igual
+//Valores de exibiÁ„o quando apertado o bot„o igual
 function calcular(Op) {
     if (document.getElementById('display').value == ""){
-        alert("O Campo esta v√°zio digite um valor");
+        alert("O Campo esta v·zio digite um valor");
         document.getElementById('display').value ="0"; 
     }else{
             if (aux && operacaoPendente != "=");
@@ -37,7 +37,7 @@ function calcular(Op) {
                             else    if ( '/' == operacaoPendente ){
                                         var auxiliar = document.getElementById('display').value;
                                         if (auxiliar == 0) {
-                                            document.getElementById('display').value = "N√£o Existe Divis√£o Por Zero!";
+                                            document.getElementById('display').value = "N„o Existe Divis„o Por Zero!";
                                         }else{
                                             acumulador /= parseFloat(document.getElementById('display').value);
                                         }
@@ -61,7 +61,7 @@ function raiz(){
     }
 }
 
-//Atribuindo o ponto( . ) aos valores num√©ricos
+//Atribuindo o ponto( . ) aos valores numÈricos
 function ponto() {
     var valPresente = document.getElementById('display').value;
     if (aux) {
